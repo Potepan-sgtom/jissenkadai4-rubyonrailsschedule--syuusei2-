@@ -1,0 +1,30 @@
+/*以下、ページのレイアウト*/
+header {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: red;
+    }
+ 
+    footer{
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      color: red;
+    }
+
+/*以下、テーブル及びアナウンスのレイアウト*/
+table th {
+        background-color: #fbc25b;
+        padding: 10px 20px;
+    }
+ 
+    table td {
+        background-color: #f9ecd5;
+        padding: 10px 20px;
+    }
+ 
+    .notice {
+        background-color: #ccf;
+        padding: 5px;
+    }

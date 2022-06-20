@@ -1,0 +1,2 @@
+class Rensyu < ApplicationRecord
+end

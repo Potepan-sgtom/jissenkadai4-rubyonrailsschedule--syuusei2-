@@ -1,0 +1,38 @@
+<h3>ユーザー編集</h3>
+ 
+    <%= form_with model: @schedule do |f| %>
+      <table>
+        <tr>
+          <th><%= f.label :title ,"タイトル" %></th>
+          <td><%= f.text_field :title %></td>
+        </tr>
+ 
+        <tr>
+          <th><%= f.label :start ,"開始日" %></th>
+          <td><%= f.datetime_field :start %></td>
+        </tr>
+ 
+        <tr>
+          <th><%= f.label :end ,"終了日" %></th>
+          <td><%= f.datetime_field :end %></td>
+        </tr>
+ 
+        <tr>
+          <th><%= f.label :oneday ,"終日" %></th>
+          <td><%= f.check_box :oneday %></td>
+        </tr>
+        
+        <tr>
+          <th><%= f.label :introduction ,"スケジュールメモ" %></th>
+          <td><%= f.text_area :introduction %></td>
+        </tr>
+            
+      </table>
+      
+      <div>
+        <ul>
+          <li><%= f.submit "編集を完了する" %></li>
+          <li><%= link_to "スケジュール一覧に戻る", :schedules %></li>
+        </ul>
+      </div>
+    <% end %>
